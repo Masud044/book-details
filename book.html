@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gutenberg Books</title>
+  <link rel="stylesheet" href="book.css">
+</head>
+<body>
+  <nav>
+    <div>📚 Gutenberg Books</div>
+    <div>
+      <a href="#" onclick="showPage('home')">Home</a>
+      <a href="#" onclick="showPage('wishlist')">Wishlist</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="filters">
+      <input type="text" id="searchBar" placeholder="Search by title..." />
+      <select id="genreFilter">
+        <option value="">All Genres</option>
+      </select>
+    </div>
+
+    <div id="bookList" class="books"></div>
+    <div class="pagination" id="pagination"></div>
+    <div id="wishlistPage" class="books" style="display:none"></div>
+  </div>
+
+  <script src="book.js"></script>
+</body>
+</html>
